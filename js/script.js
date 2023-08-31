@@ -21,11 +21,21 @@ user_pc = Number(Math.floor((Math.random() * 5) + 1));
 console.log(user_pc);
 
 //sommiamo i numeri dati/generati
-somma = Number(user_uno_number += user_pc)
+somma = user_uno_number + user_pc
 console.log(somma);
 //stabiliamo se il risultato è pari o dispari
-
+if(somma % 2 == 0){
+    somma = 'pari'
+} else{
+    somma = 'dispari'
+}
+console.log(somma);
 //se la scelta iniziale (pari/dispari) dell'utente è uguale al risultato l'utente vince
 
 //altrimenti perde
 
+if(user_uno == somma){
+    console.log('HAI VINTO');
+} else{
+    console.log('Hai perso');
+}
