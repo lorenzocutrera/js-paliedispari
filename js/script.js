@@ -13,11 +13,11 @@ let somma;
 user_uno = prompt('Scegli tra pari o dispari');
 console.log(user_uno);
 //domandare all'utente un numero da 1 a 5 
-user_uno_number = prompt('Adesso scegli un numero da 1 a 5')
+user_uno_number = Number(prompt('Adesso scegli un numero da 1 a 5'))
 console.log(user_uno_number);
 
 //il pc genera un numero random da 1 a 5
-user_pc = Math.floor((Math.random() * 5) + 1);
+user_pc = Number(Math.floor((Math.random() * 5) + 1));
 console.log(user_pc);
 
 //sommiamo i numeri dati/generati
