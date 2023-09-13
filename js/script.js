@@ -17,7 +17,7 @@ user_uno_number = Number(prompt('Adesso scegli un numero da 1 a 5'))
 console.log(user_uno_number);
 
 //il pc genera un numero random da 1 a 5
-user_pc = Number(Math.floor((Math.random() * 5) + 1));
+user_pc = randomNumber(5);
 console.log(user_pc);
 
 //sommiamo i numeri dati/generati
@@ -38,4 +38,14 @@ if(user_uno == somma){
     console.log('HAI VINTO');
 } else{
     console.log('Hai perso');
+}
+
+/**
+ * Generate a random number of maximum: max
+ * @param {integer} max Maximum number generated
+ */
+function randomNumber(max){
+    let number = Number(Math.floor((Math.random() * max) + 1));
+
+    return number;
 }
