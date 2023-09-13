@@ -17,18 +17,28 @@ userword = prompt('Inserisci qui una parola')
 console.log(userword);
 
 //Creare una funzione per capire se la parola inserita è palindroma
+//FUNZIONE CHE INVERTE LA PAROLA
+function inverti(userword) {
+    let parolaDivisa = userword.split('');
+    console.log(parolaDivisa);
 
-let parolaDivisa = userword.split('');
-console.log(parolaDivisa);
+    parolaDivisa = parolaDivisa.reverse();
+    console.log(parolaDivisa);
 
-parolaDivisa = parolaDivisa.reverse();
-console.log(parolaDivisa);
+    let parolaInvertita = parolaDivisa.join('');
+    console.log(parolaInvertita);
 
-let parolaInvertita = parolaDivisa.join('');
-console.log(parolaInvertita);
+    return parolaInvertita;
+}
 
-if (userword === parolaInvertita){
+parolaInvertita = inverti(userword);
+
+
+if (userword === parolaInvertita) {
     alert('Latua parola è palindoma');
-}else {
+} else {
     alert('la tua parola non è palindroma')
 }
+
+
+
